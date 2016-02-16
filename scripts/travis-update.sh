@@ -16,6 +16,9 @@ cd nightly-librustc_unicode
 rm -r src
 cp -r ../rust/src/librustc_unicode src
 
+# remove official Cargo.toml in favor of our own
+rm src/Cargo.toml
+
 # try to build it
 cargo build
 
